@@ -1,0 +1,31 @@
+h1{
+color:red;
+font-family:impact;
+}
+body{
+	text-align:center;
+	background-image: url("misys.JPG");
+	 background-position: center;
+	 padding-bottom : 60px;
+	 background-size: 1500px 500px;
+	color:cyan;
+	font-family:candera;
+	font-size:28px;
+	margin-top: -42px;
+		
+		}
+#datafetched
+		{
+			background-color:lightcyan;
+		}
+#btn1
+{
+    background-color: green;
+    color: white;
+}
+#btn11
+{
+	background-color: green;
+    color: white;	
+
+}

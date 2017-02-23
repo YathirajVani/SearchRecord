@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head> <title>Misys</title>
+<link rel="stylesheet" href="demo.css">
+<script type="text/javascript">
+		function submitFunction()
+		{
+			var x=document.forms["form"]["user"].value;
+			var y=document.forms["form"]["pass"].value;
+			if (x==null || x=="" && y==null || y=="") 
+			{   
+				alert("Both fields must be filled");
+			}
+			else if (x=="misys" && y=="1234")
+			{
+				alert("Loged in successfully");
+			}
+			else
+				alert("Invalid");
+		}
+	</script>
+</head>
+<body>
+    <form name="form" onSubmit="submitFunction()">
+    <h1 align="center">Login Page</h1>
+    Username: <input type="text" id="user" name="username"> <br/> </br>
+    Password: <input type="password" id="pass" name="password"> <br/> </br>
+    <input type="submit" id="btn1" name="submit" value="Login" onclick="validate()"> <br/> </br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Create Record Page
+    </title>
+
+    <Style type = text/css>
+		#summary{
+					width : 120px;
+					padding : 120px;
+					border : 2 px solid lightblue;
+					transition: width 0.4s ease-in-out;
+					border:10 px solid lightseagreen;
+					-moz-user-focus: width:100%;
+				}
+		</style>		
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+</head>
+<Body style="background-color: lightblue">
+
+<h1>Create your record here</h1>
+
+<div>
+    <lable>Title of the Issue : </lable>
+    <textarea id="title" placeholder ="title"></textarea>
+    <br>
+    </br>
+    <lable>Summary of the Issue : </lable>
+    <textarea id="summary" placeholder ="summary" align= "left"></textarea>
+    <br>
+    <br>
+    <lable>Screenshot for the record if any  : </lable>
+  
+
+<input type="file" onchange="previewFile()"><br></br>
+
+<img src="" height="200" alt="Image preview...">
+
+<script>
+function previewFile() {
+  var preview = document.querySelector('img');
+  var file    = document.querySelector('input[type=file]').files[0];
+  var reader  = new FileReader();
+
+  reader.addEventListener("load", function () {
+    preview.src = reader.result;
+  }, false);
+
+  if (file) {
+    reader.readAsDataURL(file);
+  }
+}
+
+
+</script>
+
+              
+    <br></br>
+<br></br>
+
+  <lable>Log Files for the Record  : </lable>
+   
+<input type="file" name="xml" class="custom-upload" id="custom-upload"/>
+</script>
+<br></br>
+<br></br>
+
+    <button type="button" onclick="saveTask()" >Submit</button>
+</di>
+</Body>
+</header>
+<script>
+        console.log("Executed script");
+        function saveTask() {
+            $.ajax({
+                type: 'POST',
+                url: '/api/task',
+                data: JSON.stringify ({title: $('#title').val(), summary: $('#summary').val() }),
+                
+                success: function (data) { alert('data: ' + JSON.stringify(data)); },
+                contentType: "application/json",
+                dataType: 'json'
+               
+            });
+        }
+
+       
+
+        var v1 = saveTask();
+      
+    </script>
+
+</html>

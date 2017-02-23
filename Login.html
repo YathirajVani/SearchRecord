@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+     <style>
+       
+    </style>
+
+    <title>Login | Misys Financial Software</title>
+	
+	<SCRIPT type="text/javascript">
+	window.history.forward();
+	function noBack() { window.history.forward(); }
+</SCRIPT>
+<link href="./bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <!--<link href="../public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- MetisMenu CSS -->
+    <!--<link href="../public/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">-->
+
+    <!-- Custom CSS -->
+    <!--<link href="../public/dist/css/sb-admin-2.css" rel="stylesheet">-->
+	<!--<link href="../public/dist/css/index.css" rel="stylesheet">-->
+
+    <!-- Custom Fonts -->
+    <!--<link href="../public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		
+    <![endif]-->
+
+		    <!-- jQuery -->
+    <!--<script src="../public/vendor/jquery/jquery.min.js"></script>-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <!--<script src="../public/vendor/bootstrap/js/bootstrap.min.js"></script>-->
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <!--<script src="../public/vendor/metisMenu/metisMenu.min.js"></script>-->
+
+    <!-- Custom Theme JavaScript -->
+    <!--<script src="../public/dist/js/sb-admin-2.js"></script>-->
+	
+	<!-- <script src="./index.css"></script> -->
+	 <!-- <script src="../public/Login.js"></script> -->
+	
+	<script type="text/javascript">
+	 
+// Below function Executes on click of login button.
+function validate(){
+var x = document.getElementById("username").value;
+var y = document.getElementById("password").value;
+
+
+if(x=="misys" && y=="misys")
+{
+// window.location = "gapgraph.html";
+window.location = "Search.html"; 
+}
+else if((x==null ||x=='') && (y==null || y==''))
+{
+alert("Both field cant be empty.");
+}
+else if((x==null ||x=='') && (y!=null || y!=''))
+{
+alert("User Name can't be blank");
+}
+else if((x!=null ||x!='') && (y==null || y==''))
+{
+alert("Password can't be blank");
+}
+else if(x=="misys" && y!="misys"){
+alert("Password is not match");
+}
+else if(x!="misys" && y=="misys"){
+alert("UserName is not match");
+}
+else
+{
+alert("User doesn't exist");
+}
+}
+</script>
+	</head>
+
+<body oncontextmenu="return false;" style= "background-color: lightskyblue;>
+<div id="wrapper">
+<nav class="navbar navbar-default navbar-static-top" role="navigation " style="margin-bottom: 100; background-color: #000000">
+        <div class="navbar-header" style= "background-color: #000000">
+            <div class="navbar-company-logo">
+            <a href="#">
+            <img width="175" align="left" src="D:\SearchRecord\Rajneesh Files\Public\Images\misyslogo.jpg" alt="Misys Financial Software" title="Dashboard" data-reactid="61"/>
+            </a>
+            <a class="navbar-brand" href="#" data-reactid="62">MES</a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+
+<img src="" alt="" style="width: 3200px;height:60px;">
+
+<!-- <img src="../public/Images/Customer Connect_LV.jpg" alt="HTML5 Icon" style="width:320px;height:60px;" align="right" > -->
+<!--<img src="../public/Images/Customer_Connect_Logo.jpg" alt="HTML5 Icon" style="width:320px;height:60px;" align="right" >-->
+
+
+
+    <div class="container">
+	
+        <div class="row">
+		
+		<!-- <img src="../public/Images/connect.jpg" alt="HTML5 Icon" style="width:292px;height:325px;padding-top:115px;"> -->
+		 <!--<img src="../public/Images/Misyss.jpg" alt="HTML5 Icon" style="width:250px;height:150px;padding-top:115px;" align="right"> -->
+            <div class="col-md-5 col-md-offset-4"  >
+			
+                <div  class="login-panel panel panel-default" >	
+
+               
+                    <div class="panel-heading" >
+                        <h3 class="panel-title"><b>Login to continue</b></h3>
+                    </div>
+					
+                    <div class="panel-body">
+					
+                        <form name="myform" method="post">
+                            <fieldset >
+                                <div class="form-group">
+                                    <input class="form-control" type="text" id="username" placeholder="username"  name="username">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" type="password" id="password" placeholder="password"  name="password">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                    </label>
+                                </div>
+                                <!-- Change this to a button or input when using this as a form -->
+							<input class="btn btn-lg btn-success btn-block" type="button" value="Login" onclick="validate()"/>
+								
+                                 <!-- <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a> -->
+								 
+                            </fieldset>
+							
+                        </form>
+						
+                    </div>
+					
+                </div>
+				
+            </div>
+			
+        </div>
+		
+    </div>
+	
+	
+
+
+
+</body>
+
+</html>

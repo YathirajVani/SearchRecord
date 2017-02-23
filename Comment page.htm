@@ -1,0 +1,76 @@
+<html>
+    <h1 align="center">RESULT PAGE</h1>
+<head>
+    <script type="text/javascript">
+		function init()
+		{
+			document.getElementById("dataBox").readOnly="true";
+		}
+	</script>
+<meta charset = "utf-8">
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<link href = "css/bootstrap.css" rel = "stylesheet" type = "text/css"/>
+<link href="Commentpage.css" rel="stylesheet" type="text/css"/>
+<link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+<title>Comment Box</title>
+</head>
+<body onload="init()">
+    
+<!--container-->
+
+<div class="container">
+<div id="data-message" class="form-row">
+<textarea name = "dataBox" id = "dataBox" style="height: 500px" ></textarea></div>
+<!--Wrap-->
+<!--<div id="wrap">-->
+<div id="main">
+<div class="row">
+<div class="col-md-5">
+<h3 class="heading">Comments</h3>
+</div>
+
+</div>
+</div>
+<p>    Please post your comment below  </p>
+
+<!--Form Start-->
+<div id='form'>
+<div class="row">
+<div class="col-md-14">
+
+<form action="" method="POST" id="commentform">
+
+<div id="comment-message" class="form-row">
+<textarea name = "comment" placeholder = "Message" id = "comment" ></textarea>
+</div>
+<a href="#"><input type="submit" name="dsubmit" id="commentSubmit" value="Submit Comment"></a>
+<input style="width: 30px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked">
+<p1><b>Notify me when new comments are added.</b></p1>
+</form>
+
+</div>
+</div>
+</div>
+</div>
+
+<!--Reply Section-->
+<!--<div id="second">-->
+<!--<div class="row">-->
+<!--<div class="col-md-5">-->
+<!--<h3 class="second_heading"><b>Leave a Reply</b></h3>-->
+<!--</div>-->
+<!--<div class="col-md-15">-->
+<!--<div class="blank"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div id="middle">-->
+<!--<form>-->
+<!--<a href="#"><input type = "text" value = "reply" name = "dreply" id = "inner_reply"></a>-->
+<!--</form>-->
+<!--</div>-->
+
+</div>
+</body>
+</html>

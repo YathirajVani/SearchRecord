@@ -1,0 +1,136 @@
+body{
+background-image: url("download.JPG");
+	 background-position: center;
+	 padding-bottom : 60px;
+	 background-attachment: fixed;
+	 background-size: 1000px 500px;
+}
+
+
+#wrap{
+border: 1px solid lightskyblue;
+alignment-adjust:central;
+margin-left: 2pt;
+margin-top: 5px;
+box-shadow: 0 5px ;
+padding-bottom: 5px;
+
+
+}
+h1{
+color: blue-violet;
+text-align: center;
+}
+/*h3.heading{*/
+margin-left: 5px;
+background-color: #2c95dc;
+font-size: 35px;
+float: left;
+padding-left: 1px;
+position: relative;
+width: 405px;
+height: 10px;
+padding-top: 1px;
+
+/*}*/
+#upper_blank{
+border-bottom: 7px solid steelblue;
+margin-top: 40px;
+margin-right: 85px;
+width: 70px;
+padding-right: 80px;
+}
+p{
+margin-left: 5px;
+padding: 5px;
+margin-top: -50px;
+padding-left: -10px;
+}
+#comment{
+margin-left: 10px;
+margin-top: -30px;
+padding-left: 0px;
+width: 450px;
+height: 100px;
+}
+#commentSubmit{
+margin-top: 10px;
+margin-left: 10px;
+width: 170px;
+height: 45px;
+color: powderblue;
+font-size: 20px;
+background-color: #2c95dc;
+box-shadow: 0 3px 0 #09466f;
+margin-bottom: 5px;
+padding-left: 5px;
+border-radius: 5px;
+}
+#commentSubmit:hover {
+background-color: #09466f;
+
+}
+
+p{
+font-size: 18px;
+color: lightskyblue;
+padding-bottom: 15px;
+padding-top: 15px;
+}
+p1{
+font-size: 18px;
+padding-top: 20px;
+}
+
+h3.second_heading{
+margin-left: 0;
+margin-top: 5px;
+font-size: 20px;
+width: 250px;
+height: 50px;
+padding-top: 10px;
+padding-left: 45px;
+
+}
+#middle{
+border: 1px solid lightgray;
+width: 300px;
+height: 100px;
+background-color: lightyellow;
+margin-left: 5px;
+text-align: left;
+margin-top: 0px;
+box-shadow: 0 2px 0 lightgray;
+}
+.blank{
+border-bottom: 1px solid steelblue;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 100px;
+width: 800px;
+}
+
+#inner_reply{
+margin-left: 0px;
+margin-top: 110px;
+width: 100px;
+height: 30px;
+background-color: #2c95dc;
+text-align: center;
+font-size: 18px;
+color: white;
+border-radius: 1px;
+}
+
+#dataBox{
+    width: 1150px;
+    height: 120px;
+    border: 3px solid cyan;
+	padding: 15px;
+    margin-top: -10px;
+	font-family: Tahoma, sans-serif;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+    background-color: lightcyan
+    
+}

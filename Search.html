@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	 <title>Misys</title>
+<link rel="stylesheet" href="Search.css">
+<script type="text/javascript">
+		function validate()
+		{
+			var x=document.forms["form"]["user"].value;	
+			if (x==null || x=="") 
+			{   
+				alert("Please enter keyword for search");
+			}
+		}
+		
+	</script>
+</head>
+<body>
+    <form name="form" >
+    <h1 align="center">Search Page</h1>
+    Search: <input type="text" id="user" name="username" placeholder="enter keyword">
+    <input type="submit" id="btn1" name="submit" value="Search" onclick="validate()"> 
+	<li>
+                <a href="index.html" input type="button" id="btn11" name="Create" value="create"><i class="fa fa-sitemap fa-fw"></i>CREATE</a>
+             </li>
+
+	<!--<a href="index.html" input type="submit" id="btn11" name="Create" value="create"><i class="fa fa-sitemap fa-fw"></i>Heat</a>-->
+    <textarea rows="25" cols="150" id="datafetched" name="description"></textarea>
+    </form>
+	<div>
+		<a ref="index.html";
+		</div>
+
+</body>	
+</html>
